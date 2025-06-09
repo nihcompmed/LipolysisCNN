@@ -35,8 +35,10 @@ All steps from the beginning optimization to the final parameter inference is as
           
   Step 4:
   
-          7.for training the neural network(s) for the 2D model, go to:
-          8.for training the neural network(s) for the 3D model, go to:
+          7 and 8.for training the neural network(s) for the 2D or 3D model, go to the folder 
+          
+
+          
           
   Step 5:
   
