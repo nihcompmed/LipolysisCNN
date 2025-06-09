@@ -10,18 +10,27 @@ Readme:
 
 All steps from the beginning optimization to the final parameter inference is as follows:
   Step 1:
+  
           1.for parameter estimation from optimization for the 2D model, go to:
           2.for parameter estimation from optimization for the 3D model, go to:
+          
   Step 2:
+  
           3.for generating sample parameter set for the 2D model, go to:
           4.for generating sample parameter set for the 3D model, go to:
+          
   Step 3:
+  
           5.for getting simulated datasets for the 2D model, go to:
           6.for getting simulated datasets for the 3D model, go to:
+          
   Step 4:
+  
           7.for training the neural network(s) for the 2D model, go to:
           8.for training the neural network(s) for the 3D model, go to:
+          
   Step 5:
+  
           9.for parameter inference from the trained network for the 2D
           model, go to: Step5_2D_parameter_inference.ipynb
   
