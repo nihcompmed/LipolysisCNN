@@ -37,7 +37,7 @@ All steps from the beginning optimization to the final parameter inference is as
   
           7 and 8.for training the neural network(s) for the 2D or 3D model, go to the folder 
           
-          /TrainingNetworks
+          /Step4_TrainingNetworks
           
           and there are several swarm files for any network needed in this paper. 
           For example, one can run
