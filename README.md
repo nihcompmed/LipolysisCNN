@@ -37,8 +37,34 @@ All steps from the beginning optimization to the final parameter inference is as
   
           7 and 8.for training the neural network(s) for the 2D or 3D model, go to the folder 
           
-
+          /TrainingNetworks
           
+          and there are several swarm files for any network needed in this paper. 
+
+          For example, one can run
+
+          python GFX3DNN_twithreciGIF_250203.py 1000 1e-3 10 500 6 241216 2000 1000 relu 250207033
+
+          to train a network for 3D with feature engineering case (twithreciGIF). The other sys input can be seen in the file GFX3DNN_twithreciGIF_250203.py in the same folder.
+
+          Notice: These py files are all using the full 2D and 3D datasets, so one need to replace the name of .csv dataset by their own dataset to be trained with.
+          For example, in the GFX3DNN_twithreciGIF_250203.py, look at the commands:
+
+          inpcsv = pd.read_csv('In250115_GFX3D25_decF_mvlgnmDirect_3930694.csv', header=None)
+          inputs = torch.tensor(inpcsv.values[:, :npara ], dtype=torch.float32)
+          #print(inputs[0])
+          outcsv = pd.read_csv('Out250115_GFX3D25_decF_mvlgnmDirect_3930694.csv', header=None)
+          Ou = torch.tensor(outcsv.values, dtype=torch.float32)
+          outputs = Ou.reshape(Ou.shape[0], 16, 4).transpose(1, 2)
+
+          Replace it to be:
+          
+          inpcsv = pd.read_csv('*** PUT YOUR OUTPUT PARAMETER SET FOR TRAINING ****.csv', header=None)
+          inputs = torch.tensor(inpcsv.values[:, :npara ], dtype=torch.float32)
+          #print(inputs[0])
+          outcsv = pd.read_csv('*** PUT YOUR INPUT SIMULATED TRAJETORY SET FOR TRAINING ****.csv', header=None)
+          Ou = torch.tensor(outcsv.values, dtype=torch.float32)
+          outputs = Ou.reshape(Ou.shape[0], 16, 4).transpose(1, 2)
           
   Step 5:
   
