@@ -1,11 +1,20 @@
 
 Readme:
   1. If readers just want to reproduce the figures in the paper, then they may just use Matlab to 
-    open the plot_every_figure.m and run the following command in Matlab:
-    plot_every_figure(fignumber), where fignumber is from 1 to 11 for figure1 to figure11, and from 31 to 37 for supplementary figures.
+    open the file
+
+    plot_every_figure.m
+
+    and run the following command in Matlab:
+
+    plot_every_figure(fignumber)
+    
+    where fignumber is from 1 to 11 for figure1 to figure11, and from 31 to 37 for supplementary figures.
+    
   2. Since trained network (around 220MB) and simulated datasets (several GBs) are too big, we do not upload them here.
      One can contact Xiaoyu Duan at duanx3@nih.gov if they want to get one for checking.
-  3. Anyway, here we provide the code from scratch, so that as long as one follow the steps, they can generate simulated datasets and
+     
+  4. Anyway, here we provide the code from scratch, so that as long as one follow the steps, they can generate simulated datasets and
      trained networks on their own(of course it is recommended to train the networks with GPUs).
 
 All steps from the beginning optimization to the final parameter inference is as follows:
