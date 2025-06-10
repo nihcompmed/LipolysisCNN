@@ -13,7 +13,11 @@ Readme:
     
   2. Since trained network (around 220MB) and simulated datasets (several GBs) are too big, we do not upload them here.
      One can contact Xiaoyu Duan at duanx3@nih.gov if they want to get one for checking. But we upload the first 10,000
-     rows of those datasets in case readers would like to use and check. They are called:
+     rows of those datasets in case readers would like to use and check. They are in the folder
+
+     /SimulatedDataset_first10k
+
+     and they are:
 
      dataset2D_networkinput_tGIF_first10k.csv
      
