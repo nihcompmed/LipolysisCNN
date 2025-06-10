@@ -1,0 +1,88 @@
+%%% fig
+fig2: 
+'GFX3DoptmRelGluFFAsimult_25FSIGT_fromdenoiseFFA_01_to_25.csv'
+inused=importdata('prepare_fig2_parameterset3DdecF_mvlgnmDirect_first10kdata_of3930694.csv'); 
+Para2= importdata('prepare_fig3_optmpara_2Dmodel.csv');
+
+in=importdata('prepare_fig3_parameterset2D_mvlgnmDirectparaphybd_first10kdata_of2877269.csv');
+
+fig4
+simudata=importdata('prepare_fig4_3DdecF_mvlgnmDirect_first10kdata_of3930694.csv'); 
+optmG=importdata('GFX3D25_optmG.csv');optmF=importdata('GFX3D25_optmF.csv');
+fig5
+    optmF2D=importdata('FX2D25LIP_optmF_241214.csv');
+    simudata=importdata('Out250130FX2D25_mvlognmdirectparaphybd_2877269_first10k.csv');
+
+    fig6b
+        paratrain=importdata('inferencefromnetwork/paratrain_24121602.csv');
+    parainfertrain=importdata('inferencefromnetwork/parainfertrain_24121602.csv');
+
+fig7b
+
+    paratest=importdata('inferencefromnetwork/paratest_24121602.csv');
+    parainfertest=importdata('inferencefromnetwork/parainfertest_24121602.csv');
+    paraoptm=importdata('prepare_fig3_optmpara_2Dmodel.csv');
+    paratrue=paraoptm(:,1:5);
+    parainferoptm=importdata('inferencefromnetwork/parainferfromoptm_Mvlognormal25_24121602.csv');
+
+
+
+    RUN:python FX2DNN_twithreciGIF_241216_MvLognormal_noinferGIFb_tanh01.py 500000 1e-3 500 241216 1000 500 24121602
+
+
+    fig7
+Need to generate
+
+inpcsv = pd.read_csv('In250115_GFX3D25_decF_mvlgnmDirect_3930694.csv', header=None)
+outcsv = pd.read_csv('Out250115_GFX3D25_decF_mvlgnmDirect_3930694.csv', header=None)
+
+
+
+parainfertrain = importdata('inferencefromnetwork/paragiventrain_Mvlognormaldirect_25011504.csv');
+paratrain      = importdata('inferencefromnetwork/parainfertrain_Mvlognormaldirect_25011504.csv');
+
+parainfertest  = importdata('inferencefromnetwork/paragiventest_Mvlognormaldirect_25011504.csv');
+paratest       = importdata('inferencefromnetwork/parainfertest_Mvlognormaldirect_25011504.csv');
+
+parainferoptm = importdata('inferencefromnetwork/parainferfromoptm_Mvlognormaldirect_25011504.csv');
+
+
+
+
+
+    fig8
+      dataTable_1248kdata = readtable('dataTable_1248kdata_forFigureP.csv');
+
+      fig9
+          dataTable_1248kdata = readtable('dataTable_1248kdata_forFigureP.csv');
+
+          fig10
+              names = ["test_3D_124810kdata", "optm_3D_124810kdata", ...
+             "optm_3D_500kdata",     "test_3D_500kdata"];
+    for k = 1:numel(names)
+        fn = fullfile("datatables", "dataTable_" + names(k) + ".csv");
+        tbl{k} = sortrows(readtable(fn), {'ntrain','Activation','FeatureType'});
+    end
+
+% 'dataTable_test_2D_124810kdata.csv' half done
+% 'dataTable_optm_2D_124810kdata.csv', ... half done
+% 'dataTable_test_2D_500kdata.csv'... done
+% 'dataTable_optm_2D_500kdata.csv' done
+
+    figS5
+    aa=importdata('prepare_fig2_parameterset3DdecF_mvlgnmDirect_first10kdata_of3930694.csv');
+
+
+
+
+    FigS10
+% 'dataTable_test_3D_124810kdata.csv'), ...
+% 'dataTable_optm_3D_124810kdata.csv'), ...
+    dataTable_test_3D_500kdata = readtable('datatables/dataTable_test_3D_500kdata.csv');
+    dataTable_optm_3D_500kdata = readtable('datatables/dataTable_optm_3D_500kdata.csv');
+
+
+
+
+FigS14
+denoiseFFA=importdata('FCdenoised_FFA.csv');
