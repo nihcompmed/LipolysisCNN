@@ -36,8 +36,13 @@ All steps from the beginning optimization to the final parameter inference is as
           
   Step 3:
   
-          5.for getting simulated datasets for the 2D model, go to:
-          6.for getting simulated datasets for the 3D model, go to:
+          5.for getting simulated datasets for the 2D model:
+          
+            First, open GPR_generate_insulin_data.ipynb and run it to generate an insulin sample matrix.
+            
+          6.for getting simulated datasets for the 3D model:
+
+            First, open GPR_generate_insulin_data.ipynb and run it to generate an insulin sample matrix.
           
   Step 4:
   
