@@ -18,6 +18,12 @@ Readme:
      dataset2D_networkinput_tGIF_first10k.csv
      
      dataset2D_networkoutput_parameters_first10k.csv
+
+     dataset3D_networkinput_tGIF_first10k.csv
+
+     dataset3D_networkoutput_parameters_first10k.csv
+
+     dataset3D_insulinbeforetime22_first10k.csv
      
      
   4. Anyway, here we provide the code from scratch, so that as long as one follow the steps, they can generate simulated datasets and
