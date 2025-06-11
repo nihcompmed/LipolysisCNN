@@ -47,7 +47,12 @@ All steps from the beginning optimization to the final parameter inference is as
   Step 2:
   
           3.for generating sample parameter set for the 2D model, go to:
+
+          Step2_generateparametersample_2D.m
+          
           4.for generating sample parameter set for the 3D model, go to:
+
+          Step2_generateparametersample_3D.m
           
   Step 3:
   
@@ -55,9 +60,21 @@ All steps from the beginning optimization to the final parameter inference is as
           
             First, open GPR_generate_insulin_data.ipynb and run it to generate an insulin sample matrix.
             
+            Next, open GPR_generate_glucose_data.ipynb and run it to generate a glucose sample matrix.
+
+            Then, run Step3_GeneratingSimulatedData_2D.m to generate simulated data.
+
+            Finally, filter them as your demand to become the training/validation/testing datasets for the 
+            primary neural network.
+            
           6.for getting simulated datasets for the 3D model:
 
             First, open GPR_generate_insulin_data.ipynb and run it to generate an insulin sample matrix.
+
+            Next, run Step3_GeneratingSimulatedData_3D.m to generate simulated data.
+
+            Finally, filter them as your demand to become the training/validation/testing datasets for the 
+            primary neural network.
           
   Step 4:
   
