@@ -37,7 +37,12 @@ All steps from the beginning optimization to the final parameter inference is as
   Step 1:
   
           1.for parameter estimation from optimization for the 2D model, go to:
+
+          Step1_parameterOptimization_2Dmodel.ipynb
+          
           2.for parameter estimation from optimization for the 3D model, go to:
+
+          Step1_parameterOptimization_3Dmodel.ipynb
           
   Step 2:
   
